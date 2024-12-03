@@ -1,0 +1,105 @@
+/* 继承已有的main.css样式 */
+@import url('main.css');
+
+main img {
+    float: left; /* 或者 right，取决于您希望图片在左边还是右边 */
+    margin-right: 10px; /* 如果图片在左侧，这是图片和文本之间的间距 */
+    margin-bottom: 10px; /* 图片和下文之间的间距 */
+}
+
+/* 如果您希望在图片右侧也有间距 */
+main p, h1, h2, h3, pre {
+    clear: right;
+    margin-left: 10px; /* 文本和图片之间的间距 */
+}
+
+/* (1) <main>部分的样式 */
+main {
+    width: 1200px;
+    padding: 1px;
+    border: 2px solid #e0d4af;
+    margin: 30px auto;
+    overflow: hidden; /* 清除浮动 */
+}
+
+/* (2) <header>部分的样式 */
+header {
+    width: 1200px;
+    height: 80px;
+    padding-left: 100px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 17px;
+    line-height: 60px;
+}
+
+/* (3) id为content部分的样式 */
+#content {
+    width: 750px;
+    border: 3px solid #e0d4af;
+    float: left;
+}
+
+/* (4) id为story部分的样式 */
+#story {
+    width: 350px;
+    border: 3px solid #e0d4af;
+    float: right; /* 右浮动 */
+}
+
+/* (5) story中的div部分的样式 */
+#story div {
+    border: 3px solid #e0d4af;
+    margin-bottom: 20px; /* 添加下边距 */
+}
+
+#content div{
+    height: 110px;
+    border-top: 2px solid grey; /* 上横线 */
+    border-bottom: 2px solid grey; /* 下横线 */
+}
+
+#story3 ul li {
+  margin-left:20px;
+}
+
+/* 侧边栏的样式 */
+aside {
+  position: fixed; /* 固定位置 */
+  top: 50%; /* 垂直居中 */
+  left: 0; /* 初始显示在屏幕左侧 */
+  transform: translateY(-50%); /* 垂直居中对齐 */
+  background-color: #f0f0f0; /* 背景颜色 */
+  padding: 10px; /* 内边距 */
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2); /* 阴影效果 */
+  z-index: 1000; /* 确保在最上层 */
+  display: flex; /* 使用flex布局 */
+  align-items: center; /* 垂直居中 */
+}
+
+/* 音频播放器的样式 */
+audio {
+  width: 0px; /* 设置一个固定宽度 */
+  margin-right: 15px; /* 与“背景音乐”文字的间距 */
+  opacity: 0; /* 初始隐藏 */
+  transition: opacity 0.5s; /* 平滑过渡效果 */
+}
+
+/* 当鼠标悬停在侧边栏上时，显示进度条 */
+aside:hover audio {
+  opacity: 1; /* 显示音频播放器 */
+  width: 200px;
+}
+
+/* "背景音乐"文字的样式 */
+marquee {
+  background-color: lightblue; /* 背景颜色 */
+  width: 20px; /* 固定宽度 */
+  height: 74px; /* 高度 */
+  line-height: 20px; /* 行高 */
+  overflow: hidden; /* 隐藏溢出的部分 */
+  cursor: pointer; /* 鼠标悬停时显示指针 */
+  position: absolute; /* 绝对定位 */
+  right: 0px; /* 距离侧边栏右侧的距离 */
+  top: 50%; /* 垂直居中 */
+  transform: translateY(-50%); /* 垂直居中对齐 */
+}

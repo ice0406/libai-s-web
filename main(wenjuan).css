@@ -1,0 +1,65 @@
+/* 页面主体设置 */
+body {
+    margin: 0; 
+    padding: 0; 
+    background-color: #F9F4F0;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 主目录部分设置 */
+header {
+    height: 96px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 17px;
+    line-height: 60px;
+    overflow: hidden;
+    padding-left: 100px; /* 将header部分的左内边距设置为100px */
+}
+
+header img {
+    float: left; /* 设置header内img为左浮动 */
+}
+
+header ul {
+    margin-right: 400px; /* 设置header内ul右外边距为400px */
+}
+
+header nav li {
+    width: 100px;
+    text-align: center;
+    list-style-type: none; /* 去掉圆点 */
+    float: left; /* 左浮动 */
+}
+
+/* 页面底部设置 */
+footer {
+    width: 100%;
+    background: linear-gradient(to right, rgb(210, 180, 140), rgb(253, 245, 230), rgb(210, 180, 140));
+    text-align: center;
+    color: rgb(128, 128, 0);
+    font-size: 12px;
+    padding-top: 20px; /* 设置footer上下内边距正确 */
+    padding-bottom: 20px; /* 设置footer上下内边距正确 */
+}
+
+footer nav {
+    margin-bottom: 20px; /* 设置footer内nav的下外边距正确 */
+}
+
+footer a {
+    color: SaddleBrown;
+}
+
+footer li {
+    list-style: none;
+    display: inline-block;
+}

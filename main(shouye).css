@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: #F9F4F0;   
+}
+
+main{
+    width: 1200px;
+    margin:30px auto;
+}
+
+header{
+    height: 60px;
+    padding-left: 100px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 17px;
+    line-height: 60px;
+}
+
+header img{
+    float: left;
+}
+
+header ul{
+    margin-right: 400px;
+}
+
+header nav li{
+    width:100px;
+    text-align: center;
+    list-style: none;   
+    float: left;
+}
+
+footer{
+    width: 100%;
+    background: linear-gradient(to right,rgb(210, 180, 140),rgb(253, 245, 230),rgb(210, 180, 140));      
+    text-align: center;
+    color:rgb(128,128,0);
+    font-size: 12px;
+}
+
+footer a{
+   color:SaddleBrown;
+}
+
+
+footer nav{   
+   margin-bottom: 20px;
+}
+
+/*main.css 文件，设置 footer 内 li 元素 */
+footer li {
+    list-style-type: none; /* 去掉圆点 */
+    display: inline-block; /* 行内块级元素 */
+}
